@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: 'bauhaus';
+    src: url('../fonts/bauhaus-93.woff2') format('woff2'),
+         url('../fonts/bauhaus-93.woff') format('woff'),
+         url('../fonts/bauhaus-93.eot'),
+         url('../fonts/bauhaus-93.ttf') format('truetype');
+}
+
+body {
+	background-color: #151515;
+	color: #FFF;
+	font-family: "bauhaus", Arial, Helvetica, Sans-serif;
+	text-align: center;
+    font-size: 16px;
+}
+
+h1 {
+    width: 90%;
+    margin: auto;
+	color: #FF8000;
+	font-size: 3rem;
+	padding: .5rem ;
+}
+
+header, nav,footer,main {
+	background-color: #084B8A;
+	border-radius: 10px;
+	font-size: 1rem;
+	margin: .5rem auto;
+	max-width: 1024px;
+	padding: 1em;
+	width: 90%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.texto-main {
+	width: 100%;
+    padding: .5rem;
+}
+
+section, aside {
+	background-color: #0B2161;
+	border-radius: 10px;
+	display: inline-block;
+	margin: .2rem auto;
+	min-height: 150px;
+	padding: 1rem;
+}
+
+section {
+	padding: .5rem;
+	width: 70%;
+}
+
+aside {
+	width: 27%;
+}
+
+article {
+	background-color: #0B173B;
+	border-radius: 10px;
+	min-height: 150px;
+	padding: .5rem;
+    margin: .5rem auto;
+}
+
+/* ESTILOS MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+	main section{
+		width: 100%;
+	}
+
+	main aside{
+		width: 100%;
+	}
+}
+
+@media (max-width: 550px) {
+	h1{
+		font-size: 1.9em;
+	}
+    
+    main aside{
+        display: none;
+    }
+}
